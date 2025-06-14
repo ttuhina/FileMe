@@ -28,10 +28,6 @@ A lightweight, beautiful file management tool built using **Node.js core modules
 
 ![FileMe Admin](sc2.png)
 
-> 📁 Place your images in a `screenshots/` folder inside your repo for these links to work, or replace with hosted URLs (e.g., from GitHub Issues or Imgur).
-
----
-
 ## 🧠 Tech Stack
 
 - **Node.js** – Core modules only (no external packages!)
@@ -51,7 +47,4 @@ A lightweight, beautiful file management tool built using **Node.js core modules
 | List Files   | `/list`            | GET    | Returns list of all files          |
 | Download     | `/download?name=`  | GET    | Downloads selected file            |
 
----
-
-## 📦 Project Structure
 
