@@ -211,6 +211,203 @@
       box-shadow: 0 12px 35px rgba(255, 107, 107, 0.4);
     }
 
+    .btn-list {
+      background: linear-gradient(135deg, #f093fb, #f5576c);
+      color: white;
+      box-shadow: 0 8px 25px rgba(240, 147, 251, 0.3);
+    }
+
+    .btn-list:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(240, 147, 251, 0.4);
+    }
+
+    .btn-download {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+      box-shadow: 0 8px 25px rgba(79, 172, 254, 0.3);
+    }
+
+    .btn-download:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(79, 172, 254, 0.4);
+    }
+
+    .btn-create-advanced {
+      background: linear-gradient(135deg, #a8edea, #fed6e3);
+      color: #333;
+      box-shadow: 0 8px 25px rgba(168, 237, 234, 0.3);
+      margin-top: 1rem;
+    }
+
+    .btn-create-advanced:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(168, 237, 234, 0.4);
+    }
+
+    .advanced-controls {
+      margin: 2rem 0;
+      padding: 2rem;
+      background: rgba(255,255,255,0.05);
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .content-editor textarea {
+      width: 100%;
+      padding: 1rem;
+      border: 2px solid #e1e8ed;
+      border-radius: 15px;
+      font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+      font-size: 0.9rem;
+      resize: vertical;
+      transition: all 0.3s ease;
+      background: white;
+    }
+
+    .content-editor textarea:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    .file-list {
+      margin-top: 2rem;
+      max-height: 300px;
+      overflow-y: auto;
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      padding: 1rem;
+    }
+
+    .file-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .file-item:hover {
+      background: rgba(255,255,255,0.2);
+      transform: translateX(5px);
+    }
+
+    .file-info {
+      flex: 1;
+    }
+
+    .file-name {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0.25rem;
+    }
+
+    .file-meta {
+      font-size: 0.8rem;
+      color: #666;
+    }
+
+    .file-actions {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .file-action-btn {
+      padding: 0.25rem 0.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .file-action-btn.read {
+      background: #667eea;
+      color: white;
+    }
+
+    .file-action-btn.download {
+      background: #4facfe;
+      color: white;
+    }
+
+    .file-action-btn.delete {
+      background: #ff6b6b;
+      color: white;
+    }
+
+    .file-action-btn:hover {
+      transform: scale(1.05);
+    }
+
+    .admin-panel {
+      margin-top: 2rem;
+      padding: 2rem;
+      background: rgba(255,255,255,0.05);
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .admin-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .admin-btn {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .admin-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    }
+
+    .status-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .status-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .loading {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 2px solid #f3f3f3;
+      border-top: 2px solid #667eea;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
     .output-section {
       margin-top: 2rem;
     }
@@ -370,7 +567,7 @@
         <div class="logo-icon">📁</div>
         <div>
           <h1>FileMe</h1>
-          <div class="subtitle">File Manager</div>
+          <div class="subtitle">Professional Node.js File Manager</div>
         </div>
       </div>
     </div>
@@ -396,6 +593,22 @@
           <button class="btn btn-delete" onclick="deleteFile()">
             🗑️ Delete
           </button>
+          <button class="btn btn-list" onclick="listFiles()">
+            📋 List
+          </button>
+          <button class="btn btn-download" onclick="downloadFile()">
+            ⬇️ Download
+          </button>
+        </div>
+      </div>
+
+      <div class="advanced-controls">
+        <div class="content-editor">
+          <label class="input-label" for="fileContent">📄 File Content (for advanced create)</label>
+          <textarea id="fileContent" placeholder="Enter file content here..." rows="4"></textarea>
+          <button class="btn btn-create-advanced" onclick="createFileWithContent()">
+            🎯 Create with Content
+          </button>
         </div>
       </div>
 
@@ -405,6 +618,43 @@
           Console Output
         </div>
         <pre id="output"></pre>
+      </div>
+
+      <div id="fileList" class="file-list" style="display: none;">
+        <h3 style="color: #333; margin-bottom: 1rem;">📂 Files in Directory</h3>
+        <div id="fileListContent"></div>
+      </div>
+
+      <div class="admin-panel">
+        <h3 style="color: #333; margin-bottom: 1rem;">🔧 Admin Panel</h3>
+        <div class="status-bar">
+          <div class="status-item">
+            <span>🟢</span>
+            <span>Server Status: <span id="serverStatus">Checking...</span></span>
+          </div>
+          <div class="status-item">
+            <span>📊</span>
+            <span>Files: <span id="fileCount">-</span></span>
+          </div>
+          <div class="status-item">
+            <span>⏱️</span>
+            <span>Uptime: <span id="serverUptime">-</span></span>
+          </div>
+        </div>
+        <div class="admin-buttons">
+          <button class="admin-btn" onclick="checkHealth()">
+            🏥 Health Check
+          </button>
+          <button class="admin-btn" onclick="getSystemInfo()">
+            💻 System Info
+          </button>
+          <button class="admin-btn" onclick="getAuditLogs()">
+            📋 Audit Logs
+          </button>
+          <button class="admin-btn" onclick="refreshAll()">
+            🔄 Refresh All
+          </button>
+        </div>
       </div>
     </div>
 
@@ -430,60 +680,375 @@
   </div>
 
   <script>
-    function createFile() {
-      const name = document.getElementById('filename').value;
-      if (!name.trim()) {
-        document.getElementById('output').textContent = 'Please enter a filename first!';
-        return;
-      }
-      
-      fetch(`/create?name=${encodeURIComponent(name)}`)
-        .then(res => res.text())
-        .then(data => {
-          document.getElementById('output').textContent = data;
-          animateOutput();
-        })
-        .catch(err => {
-          document.getElementById('output').textContent = 'Error: ' + err.message;
-        });
+    let currentFiles = [];
+    let isLoading = false;
+
+    function setLoading(loading) {
+      isLoading = loading;
+      const buttons = document.querySelectorAll('.btn, .admin-btn');
+      buttons.forEach(btn => {
+        btn.disabled = loading;
+        if (loading) {
+          btn.style.opacity = '0.6';
+          btn.style.cursor = 'not-allowed';
+        } else {
+          btn.style.opacity = '1';
+          btn.style.cursor = 'pointer';
+        }
+      });
     }
 
-    function readFile() {
-      const name = document.getElementById('filename').value;
-      if (!name.trim()) {
-        document.getElementById('output').textContent = 'Please enter a filename first!';
-        return;
-      }
-      
-      fetch(`/read?name=${encodeURIComponent(name)}`)
-        .then(res => res.text())
-        .then(data => {
-          document.getElementById('output').textContent = data;
-          animateOutput();
-        })
-        .catch(err => {
-          document.getElementById('output').textContent = 'Error: ' + err.message;
-        });
+    function showError(message) {
+      document.getElementById('output').textContent = `❌ Error: ${message}`;
+      animateOutput();
     }
 
-    function deleteFile() {
+    function showSuccess(message) {
+      document.getElementById('output').textContent = `✅ ${message}`;
+      animateOutput();
+    }
+
+    function showLoading(action) {
+      document.getElementById('output').innerHTML = `<span class="loading"></span> ${action}...`;
+    }
+
+    async function createFile() {
       const name = document.getElementById('filename').value;
       if (!name.trim()) {
-        document.getElementById('output').textContent = 'Please enter a filename first!';
+        showError('Please enter a filename first!');
         return;
       }
       
-      if (confirm(`Are you sure you want to delete "${name}"?`)) {
-        fetch(`/delete?name=${encodeURIComponent(name)}`)
-          .then(res => res.text())
-          .then(data => {
-            document.getElementById('output').textContent = data;
-            animateOutput();
+      setLoading(true);
+      showLoading('Creating file');
+      
+      try {
+        const response = await fetch(`/create?name=${encodeURIComponent(name)}`);
+        const data = await response.text();
+        
+        if (response.ok) {
+          showSuccess(data);
+          document.getElementById('filename').value = '';
+          refreshAll();
+        } else {
+          showError(data);
+        }
+      } catch (err) {
+        showError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    async function createFileWithContent() {
+      const name = document.getElementById('filename').value;
+      const content = document.getElementById('fileContent').value;
+      
+      if (!name.trim()) {
+        showError('Please enter a filename first!');
+        return;
+      }
+      
+      setLoading(true);
+      showLoading('Creating file with content');
+      
+      try {
+        const response = await fetch('/create', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            filename: name,
+            content: content || 'Hello from FileMe!'
           })
-          .catch(err => {
-            document.getElementById('output').textContent = 'Error: ' + err.message;
-          });
+        });
+        
+        const data = await response.text();
+        
+        if (response.ok) {
+          showSuccess(data);
+          document.getElementById('filename').value = '';
+          document.getElementById('fileContent').value = '';
+          refreshAll();
+        } else {
+          showError(data);
+        }
+      } catch (err) {
+        showError(err.message);
+      } finally {
+        setLoading(false);
       }
+    }
+
+    async function readFile() {
+      const name = document.getElementById('filename').value;
+      if (!name.trim()) {
+        showError('Please enter a filename first!');
+        return;
+      }
+      
+      setLoading(true);
+      showLoading('Reading file');
+      
+      try {
+        const response = await fetch(`/read?name=${encodeURIComponent(name)}&format=json`);
+        
+        if (response.ok) {
+          const data = await response.json();
+          const output = `📄 File: ${name}\n📊 Size: ${data.stats.size} bytes\n📅 Modified: ${new Date(data.stats.modified).toLocaleString()}\n\n📝 Content:\n${data.content}`;
+          document.getElementById('output').textContent = output;
+          animateOutput();
+        } else {
+          const errorText = await response.text();
+          showError(errorText);
+        }
+      } catch (err) {
+        showError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    async function deleteFile() {
+      const name = document.getElementById('filename').value;
+      if (!name.trim()) {
+        showError('Please enter a filename first!');
+        return;
+      }
+      
+      if (!confirm(`⚠️ Are you sure you want to delete "${name}"?\nThis action cannot be undone.`)) {
+        return;
+      }
+      
+      setLoading(true);
+      showLoading('Deleting file');
+      
+      try {
+        const response = await fetch(`/delete?name=${encodeURIComponent(name)}`);
+        const data = await response.text();
+        
+        if (response.ok) {
+          showSuccess(data);
+          document.getElementById('filename').value = '';
+          refreshAll();
+        } else {
+          showError(data);
+        }
+      } catch (err) {
+        showError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    async function listFiles() {
+      setLoading(true);
+      showLoading('Loading file list');
+      
+      try {
+        const response = await fetch('/list');
+        
+        if (response.ok) {
+          const files = await response.json();
+          currentFiles = files;
+          displayFileList(files);
+          showSuccess(`Found ${files.length} files`);
+        } else {
+          const errorText = await response.text();
+          showError(errorText);
+        }
+      } catch (err) {
+        showError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    function displayFileList(files) {
+      const fileListDiv = document.getElementById('fileList');
+      const contentDiv = document.getElementById('fileListContent');
+      
+      if (files.length === 0) {
+        contentDiv.innerHTML = '<p style="text-align: center; color: #666; padding: 2rem;">No files found</p>';
+      } else {
+        contentDiv.innerHTML = files.map(file => `
+          <div class="file-item">
+            <div class="file-info">
+              <div class="file-name">${file.name}</div>
+              <div class="file-meta">
+                ${formatFileSize(file.size)} • 
+                ${new Date(file.modified).toLocaleDateString()} • 
+                ${file.extension}
+              </div>
+            </div>
+            <div class="file-actions">
+              <button class="file-action-btn read" onclick="readFileFromList('${file.name}')">Read</button>
+              <button class="file-action-btn download" onclick="downloadFileFromList('${file.name}')">Download</button>
+              <button class="file-action-btn delete" onclick="deleteFileFromList('${file.name}')">Delete</button>
+            </div>
+          </div>
+        `).join('');
+      }
+      
+      fileListDiv.style.display = 'block';
+    }
+
+    function formatFileSize(bytes) {
+      if (bytes === 0) return '0 Bytes';
+      const k = 1024;
+      const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+      const i = Math.floor(Math.log(bytes) / Math.log(k));
+      return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+    }
+
+    async function downloadFile() {
+      const name = document.getElementById('filename').value;
+      if (!name.trim()) {
+        showError('Please enter a filename first!');
+        return;
+      }
+      
+      try {
+        const url = `/download?name=${encodeURIComponent(name)}`;
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = name;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        showSuccess(`Download started for "${name}"`);
+      } catch (err) {
+        showError(err.message);
+      }
+    }
+
+    // File list actions
+    function readFileFromList(filename) {
+      document.getElementById('filename').value = filename;
+      readFile();
+    }
+
+    function downloadFileFromList(filename) {
+      document.getElementById('filename').value = filename;
+      downloadFile();
+    }
+
+    function deleteFileFromList(filename) {
+      document.getElementById('filename').value = filename;
+      deleteFile();
+    }
+
+    // Admin functions
+    async function checkHealth() {
+      setLoading(true);
+      showLoading('Checking server health');
+      
+      try {
+        const response = await fetch('/health');
+        const data = await response.json();
+        
+        if (response.ok) {
+          const output = `🏥 Server Health Check\n\n` +
+                        `Status: ${data.status}\n` +
+                        `Uptime: ${formatUptime(data.uptime)}\n` +
+                        `Files Count: ${data.filesCount}\n` +
+                        `Timestamp: ${new Date(data.timestamp).toLocaleString()}`;
+          document.getElementById('output').textContent = output;
+          
+          // Update status bar
+          document.getElementById('serverStatus').textContent = data.status;
+          document.getElementById('fileCount').textContent = data.filesCount;
+          document.getElementById('serverUptime').textContent = formatUptime(data.uptime);
+          
+          animateOutput();
+        } else {
+          showError('Health check failed');
+        }
+      } catch (err) {
+        showError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    async function getSystemInfo() {
+      setLoading(true);
+      showLoading('Getting system information');
+      
+      try {
+        const response = await fetch('/admin/system');
+        const data = await response.json();
+        
+        if (response.ok) {
+          const output = `💻 System Information\n\n` +
+                        `Platform: ${data.platform}\n` +
+                        `Architecture: ${data.arch}\n` +
+                        `Node.js Version: ${data.nodeVersion}\n` +
+                        `Server Uptime: ${formatUptime(data.uptime)}\n` +
+                        `Memory Usage: ${formatMemory(data.memoryUsage)}\n` +
+                        `CPU Usage: ${JSON.stringify(data.cpuUsage, null, 2)}`;
+          document.getElementById('output').textContent = output;
+          animateOutput();
+        } else {
+          showError('Failed to get system info');
+        }
+      } catch (err) {
+        showError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    async function getAuditLogs() {
+      setLoading(true);
+      showLoading('Loading audit logs');
+      
+      try {
+        const response = await fetch('/admin/logs?limit=20');
+        const logs = await response.json();
+        
+        if (response.ok) {
+          const output = `📋 Recent Audit Logs (Last 20)\n\n` +
+                        logs.map(log => 
+                          `[${new Date(log.timestamp).toLocaleString()}] ` +
+                          `${log.ip} - ${log.action} "${log.filename}" - ` +
+                          `${log.success ? '✅ SUCCESS' : '❌ FAILED'}` +
+                          `${log.error ? ` (${log.error})` : ''}`
+                        ).join('\n');
+          document.getElementById('output').textContent = output;
+          animateOutput();
+        } else {
+          showError('Failed to get audit logs');
+        }
+      } catch (err) {
+        showError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    async function refreshAll() {
+      await checkHealth();
+      await listFiles();
+    }
+
+    function formatUptime(seconds) {
+      const days = Math.floor(seconds / 86400);
+      const hours = Math.floor((seconds % 86400) / 3600);
+      const minutes = Math.floor((seconds % 3600) / 60);
+      const secs = Math.floor(seconds % 60);
+      
+      if (days > 0) return `${days}d ${hours}h ${minutes}m`;
+      if (hours > 0) return `${hours}h ${minutes}m`;
+      if (minutes > 0) return `${minutes}m ${secs}s`;
+      return `${secs}s`;
+    }
+
+    function formatMemory(memory) {
+      return `RSS: ${(memory.rss / 1024 / 1024).toFixed(2)}MB, ` +
+             `Heap Used: ${(memory.heapUsed / 1024 / 1024).toFixed(2)}MB, ` +
+             `Heap Total: ${(memory.heapTotal / 1024 / 1024).toFixed(2)}MB`;
     }
 
     function animateOutput() {
@@ -500,11 +1065,21 @@
     // Add keyboard shortcuts
     document.getElementById('filename').addEventListener('keypress', function(e) {
       if (e.key === 'Enter') {
-        readFile();
+        if (e.ctrlKey) {
+          createFile();
+        } else {
+          readFile();
+        }
       }
     });
 
-    // Add focus animation
+    document.getElementById('fileContent').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter' && e.ctrlKey) {
+        createFileWithContent();
+      }
+    });
+
+    // Add focus animations
     document.getElementById('filename').addEventListener('focus', function() {
       this.style.transform = 'translateY(-2px)';
     });
@@ -512,6 +1087,18 @@
     document.getElementById('filename').addEventListener('blur', function() {
       this.style.transform = 'translateY(0)';
     });
+
+    // Initialize the app
+    window.addEventListener('load', function() {
+      refreshAll();
+      
+      // Auto-refresh every 30 seconds
+      setInterval(checkHealth, 30000);
+    });
+
+    // Add tooltips for keyboard shortcuts
+    document.getElementById('filename').title = 'Press Enter to read file, Ctrl+Enter to create file';
+    document.getElementById('fileContent').title = 'Press Ctrl+Enter to create file with this content';
   </script>
 </body>
 </html>
