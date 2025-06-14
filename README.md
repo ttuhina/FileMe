@@ -24,9 +24,9 @@ A lightweight, beautiful file management tool built using **Node.js core modules
 ## ✨ Screenshots
 
 ### 🔸 UI Overview
-![FileMe UI](screenshots/Screenshot_2025-06-14_164202.png)
+![FileMe UI](sc1.png)
 
-![FileMe Admin](screenshots/Screenshot_2025-06-14_164215.png)
+![FileMe Admin](sc2.png)
 
 > 📁 Place your images in a `screenshots/` folder inside your repo for these links to work, or replace with hosted URLs (e.g., from GitHub Issues or Imgur).
 
